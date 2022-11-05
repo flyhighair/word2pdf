@@ -1,0 +1,7 @@
+appscript==1.2.2
+docx2pdf==0.1.8
+fire==0.4.0
+lxml==4.9.1
+six==1.16.0
+termcolor==2.1.0
+tqdm==4.64.1
