@@ -42,3 +42,10 @@ exclude = [
 
 [tool.mypy]
 python_version = "3.10"
+
+[[tool.mypy.overrides]]
+module = [
+  "docx2pdf",
+  "fire"
+]
+ignore_missing_imports = true
