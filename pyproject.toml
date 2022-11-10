@@ -19,6 +19,7 @@ mypy = "^0.982"
 pyproject-flake8 = "^5.0.4.post1"
 flake8-isort = "^5.0.0"
 flake8-quotes = "^3.3.1"
+pytest-mock = "^3.10.0"
 
 [build-system]
 requires = ["poetry-core"]
@@ -34,6 +35,7 @@ profile = "black"
 
 [tool.flake8]
 max-line-length = 79
+inline-quotes = '"'
 exclude = [
   ".git",
   ".venv",
