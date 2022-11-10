@@ -1,23 +1,20 @@
 import fire
 from docx2pdf import convert
 
-from word2pdf.error import ValidationError
-from word2pdf.validation import isValidOutputPdfPath, isValidWordFilePath
+from word2pdf.pdf import Pdf
+from word2pdf.word import Word
 
 
 def main(input_file_path: str, output_path: str = "./") -> None:
-    if not isValidWordFilePath(input_file_path):
-        raise ValidationError("Input file does not exist.")
-
-    if not isValidOutputPdfPath(output_path):
-        raise ValidationError("Output path is invalid.")
+    word = Word(input_file_path)
+    pdf = Pdf(output_path, word)
 
     try:
-        convert(input_file_path, output_path)
+        convert(word.path, pdf.get_path())
     except Exception as e:
         raise e
     else:
-        print("Output File: %s" % output_path)
+        print("Output File: %s" % pdf.get_path())
 
 
 if __name__ == "__main__":
