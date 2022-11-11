@@ -387,7 +387,7 @@ python-versions = ">=3.7"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "932fbdb5ed91baa6ee0cdfbbf942512a91c1a270a8a4e5f02579e8b72c4266e8"
+content-hash = "9ae0cc757b50609eecf4ea87eb25410f25b836114d051a27f83ce82b69ed7b64"
 
 [metadata.files]
 appscript = [
