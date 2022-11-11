@@ -5,8 +5,8 @@ from word2pdf.word import Word
 
 
 class Pdf:
-    """変換後のPDFファイル
-    """
+    """変換後のPDFファイル"""
+
     def __init__(self, path: str, word: Word) -> None:
         if not self.__is_valid(path):
             raise AttributeError("PDF path is invalid.")
@@ -15,8 +15,7 @@ class Pdf:
         self.__word = word
 
     def get_path(self) -> str:
-        """パスを取得する
-        """
+        """パスを取得する"""
         return self.__get_dirname() + self.__get_name_with_ext()
 
     def __get_dirname(self) -> str:
