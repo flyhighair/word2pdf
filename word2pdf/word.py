@@ -3,8 +3,8 @@ import re
 
 
 class Word:
-    """変換元のWordファイル
-    """
+    """変換元のWordファイル"""
+
     def __init__(self, file_path: str) -> None:
         if not self.__is_valid(file_path):
             raise AttributeError("Word file is invalid.")
@@ -12,8 +12,7 @@ class Word:
         self.path = file_path
 
     def get_name(self) -> str:
-        """拡張子無しのファイル名を取得する
-        """
+        """拡張子無しのファイル名を取得する"""
         return os.path.splitext(os.path.basename(self.path))[0]
 
     @staticmethod
