@@ -1,6 +1,6 @@
 # word2pdf
 
-word2pdf is CLI to convert a Microsoft Word file to a Pdf file.
+word2pdf is CLI to convert a Microsoft Word file to a PDF file.
 
 ## Requirement
 
